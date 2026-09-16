@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="thierry.beer — personal homepage of Thierry Jegen. Selected projects, stack and contact.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafafa">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#09090b">
+    <script>
+      ;(function () {
+        var mode = localStorage.getItem('vueuse-color-scheme') || 'auto'
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        var isDark = mode === 'dark' || (mode === 'auto' && prefersDark)
+        document.documentElement.classList.add(isDark ? 'dark' : 'light')
+      })()
+    </script>
+    <title>thierry.beer // thierry jegen</title>
+  </head>
+  <body class="light:bg-zinc-50 dark:bg-zinc-950">
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
