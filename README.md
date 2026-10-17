@@ -1,4 +1,4 @@
-# thierry.beer — personal homepage
+# thierry.beer - personal homepage
 
 Personal homepage with more coffee jokes that are accepted by the society.
 
