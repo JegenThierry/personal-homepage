@@ -39,7 +39,7 @@ const projects: Project[] = [
     name: 'yt-dlp-web',
     tagline: 'Web interface for yt-dlp',
     description:
-      'A browser interface around the yt-dlp command-line tool. Paste a link, let the magic happen. (work in progress)',
+      'A browser interface around the yt-dlp command-line tool. Paste a link, let the magic happen.',
     tech: ['vue', 'go', 'docker'],
     period: '2026',
     links: [{ label: 'source', href: 'https://codeberg.org/thierryjegen/yt-dlp-web' }],
