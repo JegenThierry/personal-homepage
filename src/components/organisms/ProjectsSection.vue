@@ -4,6 +4,7 @@ import ProjectCard from '@/components/molecules/ProjectCard.vue'
 import type { Project } from '@/components/molecules/ProjectCard.vue'
 import centsibleScreenshot from '@/assets/images/centsible.png'
 import sunflowerScreenshot from '@/assets/images/sunflower.png'
+import ytdlpScreenshot from '@/assets/images/yt-dlp-web.png'
 
 const projects: Project[] = [
   {
@@ -42,6 +43,7 @@ const projects: Project[] = [
     tech: ['vue', 'go', 'docker'],
     period: '2026',
     links: [{ label: 'source', href: 'https://codeberg.org/thierryjegen/yt-dlp-web' }],
+    screenshot: ytdlpScreenshot,
   },
   {
     id: 'proton-authenticator-to-bitwarden',
