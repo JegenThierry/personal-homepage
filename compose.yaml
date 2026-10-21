@@ -1,8 +1,7 @@
 services:
   personal-homepage:
     container_name: personal-homepage
-    build:
-      context: .
+    image: ghcr.io/jegenthierry/personal-homepage:latest
     restart: unless-stopped
     labels:
       traefik.enable: true
