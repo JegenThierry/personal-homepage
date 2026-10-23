@@ -10,11 +10,11 @@ const paragraphs = [
 
 const facts = [
   { label: 'base', value: 'Luxembourg' },
-  { label: 'languages', value: 'lb, de, fr, en' },
+  { label: 'languages', value: 'lu, de, fr, en' },
   { label: 'focus', value: 'web, tools, self-hosted' },
   { label: 'experience', value: '5+ years' },
   { label: 'fuel', value: 'coffee ☕' },
-  { label: 'source', value: 'codeberg.org/thierryjegen' },
+  { label: 'source', value: 'github.com/JegenThierry' },
 ]
 </script>
 
