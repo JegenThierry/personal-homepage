@@ -6,6 +6,8 @@ import centsibleScreenshot from '@/assets/images/centsible.png'
 import sunflowerScreenshot from '@/assets/images/sunflower.png'
 import ytdlpScreenshot from '@/assets/images/yt-dlp-web.png'
 
+const REPO_BASE = "https://github.com/JegenThierry/"
+
 const projects: Project[] = [
   {
     id: 'liquid',
@@ -16,7 +18,9 @@ const projects: Project[] = [
       'Personal self-hosted tool for managing your liquidity. Liquidity tracking without tracking. Hold the liquor in your own hands. (work in progress)',
     tech: ['vue', 'kotlin', 'docker', 'self-hosted', 'tailwind'],
     period: '2026',
-    links: [{ label: 'source', href: 'https://codeberg.org/thierryjegen/liquid' }],
+    links: [
+      { label: 'source', href: `${REPO_BASE}liquid` }
+    ],
   },
   {
     id: 'centsible',
@@ -28,8 +32,7 @@ const projects: Project[] = [
     tech: ['nuxt', 'kotlin', 'docker', 'self-hosted', 'nuxt-ui'],
     period: '2026',
     links: [
-      { label: 'source', href: 'https://codeberg.org/thierryjegen/centsible' },
-      { label: 'live', href: 'https://centsible.thierry.beer' },
+      { label: 'source', href: `${REPO_BASE}centsible` },
     ],
     screenshot: centsibleScreenshot,
   },
@@ -42,7 +45,9 @@ const projects: Project[] = [
       'A browser interface around the yt-dlp command-line tool. Paste a link, let the magic happen.',
     tech: ['vue', 'go', 'docker'],
     period: '2026',
-    links: [{ label: 'source', href: 'https://codeberg.org/thierryjegen/yt-dlp-web' }],
+    links: [
+      { label: 'source', href: `${REPO_BASE}yt-dlp-web` }
+    ],
     screenshot: ytdlpScreenshot,
   },
   {
@@ -57,7 +62,7 @@ const projects: Project[] = [
     links: [
       {
         label: 'source',
-        href: 'https://codeberg.org/thierryjegen/proton-authenticator-to-bitwarden',
+        href: `${REPO_BASE}proton-authenticator-to-bitwarden`,
       },
     ],
   },
@@ -71,7 +76,7 @@ const projects: Project[] = [
     tech: ['css', 'html', 'js', 'docker'],
     period: '2025',
     links: [
-      { label: 'source', href: 'https://codeberg.org/thierryjegen/playgrounds' },
+      { label: 'source', href: `${REPO_BASE}playgrounds` },
       { label: 'sunflower', href: 'https://sunflower.thierry.beer' },
       { label: 'flower', href: 'https://flower.thierry.beer' },
       { label: 'easter', href: 'https://easter.thierry.beer' },
@@ -98,11 +103,11 @@ const projects: Project[] = [
     <p class="mt-14 text-xs uppercase tracking-widest text-zinc-500">
       // more on
       <a
-        href="https://codeberg.org/thierryjegen"
+        :href="REPO_BASE"
         target="_blank"
         rel="noopener noreferrer"
         class="light:text-zinc-600 underline-offset-4 transition-colors light:hover:text-rose-700 hover:underline dark:text-zinc-400 dark:hover:text-rose-200"
-        >codeberg.org/thierryjegen</a
+        >github.com/JegenThierry</a
       >
     </p>
   </section>

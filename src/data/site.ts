@@ -10,9 +10,9 @@ export const site = {
 
 export const socials = {
   codeberg: {
-    label: 'codeberg',
-    handle: '@thierryjegen',
-    href: 'https://codeberg.org/thierryjegen',
+    label: 'github',
+    handle: '@JegenThierry',
+    href: 'https://github.com/JegenThierry',
   },
   instagram: {
     label: 'instagram',
