@@ -1,15 +1,9 @@
 <script setup lang="ts">
 import TechTag from '@/components/atoms/TechTag.vue'
-
-export interface SkillEntry {
-  index: string
-  title: string
-  description: string
-  keywords: string[]
-}
+import type { Skill } from '@/data/skills';
 
 defineProps<{
-  skill: SkillEntry
+  skill: Skill
 }>()
 </script>
 

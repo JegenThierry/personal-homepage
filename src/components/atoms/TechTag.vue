@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import type { Technologies } from "@/data/technologies";
+
 defineProps<{
-  label: string
-}>()
+  label: Technologies;
+}>();
 </script>
 
 <template>

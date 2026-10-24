@@ -34,13 +34,9 @@ const readout = [
         </p>
 
         <div class="mt-8 flex flex-wrap items-center gap-6 text-sm">
-          <CyberLink :href="socials.codeberg.href" external>
-            {{ socials.codeberg.label }}
+          <CyberLink v-for="social in socials" :key="social.label" :href="social.href" external>
+            {{ social.label }}
           </CyberLink>
-          <CyberLink :href="socials.instagram.href" external>
-            {{ socials.instagram.label }}
-          </CyberLink>
-          <CyberLink :href="socials.email.href" external> contact me </CyberLink>
         </div>
       </div>
 

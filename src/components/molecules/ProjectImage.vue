@@ -4,7 +4,7 @@ import CyberFrame from '@/components/atoms/CyberFrame.vue'
 defineProps<{
   projectImage?: string
   projectName: string
-  projectNumber: string
+  projectNumber: number
 }>()
 </script>
 

@@ -2,23 +2,7 @@
 import ProjectImage from '@/components/molecules/ProjectImage.vue'
 import TechTag from '@/components/atoms/TechTag.vue'
 import CyberLink from '@/components/atoms/CyberLink.vue'
-
-export interface ProjectLink {
-  label: string
-  href: string
-}
-
-export interface Project {
-  id: string
-  index: string
-  name: string
-  tagline: string
-  description: string
-  tech: string[]
-  period: string
-  links: ProjectLink[]
-  screenshot?: string
-}
+import type { Project } from '@/data/projects';
 
 withDefaults(
   defineProps<{
@@ -61,7 +45,7 @@ withDefaults(
       </p>
 
       <div class="flex flex-wrap gap-2">
-        <TechTag v-for="tag in project.tech" :key="tag" :label="tag" />
+        <TechTag v-for="tag in project.stack" :key="tag" :label="tag" />
       </div>
 
       <div class="mt-2 flex flex-wrap gap-4 text-sm">
