@@ -1,0 +1,18 @@
+export enum Technologies {
+  C_SHARP = "c#",
+  CSS = "css",
+  DOCKER = "docker",
+  GO = "go",
+  HTML = "html",
+  JAVA = "java",
+  JS = "javascript",
+  KOTLIN = "kotlin",
+  LINUX = "linux",
+  NUXT = "nuxt",
+  REACT = "react",
+  SELF_HOSTED = "self-hosted",
+  SELF_HOSTING= "self-hosting",
+  TAILWIND = "tailwind",
+  TYPESCRIPT = "typescript",
+  VUE = "vue",
+}
