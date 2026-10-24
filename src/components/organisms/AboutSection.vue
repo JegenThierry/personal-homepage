@@ -6,7 +6,7 @@ const statement = "From first coffee to final deploy.";
 
 const paragraphs = [
   "I am Thierry, a software developer from Luxembourg (living in Germany). Writing code pays my bills during the day and keeps me busy after hours. My passion lies in shaping beautiful experiences for people. I have a strong sense of privacy and ownership, which drives me to build and host my own services.",
-  "Nearly all of my side projects revolve around one idea: owning your own data. I build what I need and publish it on Codeberg for anyone who wants applications and tools focused on privacy. Everything is brewed with an overdose of caffeine.",
+  "Nearly all of my side projects revolve around one idea: owning your own data. I build what I need and publish it on GitHub for anyone to use. Everything is brewed with an overdose of caffeine.",
 ];
 </script>
 

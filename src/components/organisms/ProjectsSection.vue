@@ -25,7 +25,7 @@ import { repository } from "@/data/repository";
         target="_blank"
         rel="noopener noreferrer"
         class="light:text-zinc-600 underline-offset-4 transition-colors light:hover:text-rose-700 hover:underline dark:text-zinc-400 dark:hover:text-rose-200"
-        >codeberg.org/thierryjegen</a
+        >github.com/JegenThierry</a
       >
     </p>
   </section>
