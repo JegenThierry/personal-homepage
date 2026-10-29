@@ -14,12 +14,12 @@ defineProps<{
 
 <template>
   <CyberFrame>
-    <div class="flex flex-col gap-3 light:bg-white p-5 dark:bg-zinc-900">
-      <p class="text-sm uppercase tracking-widest text-zinc-500">{{ title }}</p>
+    <div class="flex flex-col gap-3 bg-surface p-5">
+      <p class="text-sm uppercase tracking-widest text-foreground-subtle">{{ title }}</p>
       <dl class="flex flex-col gap-2 font-mono">
         <div v-for="line in lines" :key="line.key" class="flex items-baseline gap-2 text-sm">
-          <dt class="shrink-0 light:text-indigo-600 dark:text-indigo-300">&gt; {{ line.key }}:</dt>
-          <dd class="uppercase tracking-widest light:text-zinc-600 dark:text-zinc-400">
+          <dt class="shrink-0 text-brand-primary">&gt; {{ line.key }}:</dt>
+          <dd class="uppercase tracking-widest text-foreground-muted">
             {{ line.value }}
           </dd>
         </div>

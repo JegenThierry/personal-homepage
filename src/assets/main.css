@@ -2,3 +2,95 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant light (&:where(.light, .light *));
+
+@theme {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-tertiary: var(--brand-tertiary);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+
+  --color-accent: var(--accent);
+  --color-accent-emphasis: var(--accent-emphasis);
+
+  --color-selection: var(--selection);
+  --color-selection-foreground: var(--selection-foreground);
+
+  --color-grid: var(--grid);
+  --color-scanline: var(--scanline);
+  --color-glow-top: var(--glow-top);
+  --color-glow-bottom: var(--glow-bottom);
+}
+
+:root,
+.light {
+  --primary: var(--color-indigo-600);
+  --secondary: var(--color-rose-700);
+  --tertiary: var(--color-indigo-400);
+
+  --background: var(--color-zinc-50);
+  --surface: var(--color-white);
+  --surface-muted: var(--color-zinc-100);
+
+  --foreground: var(--color-zinc-950);
+  --foreground-muted: var(--color-zinc-600);
+  --foreground-subtle: var(--color-zinc-500);
+
+  --border: var(--color-zinc-300);
+  --border-subtle: var(--color-zinc-200);
+
+  --accent: var(--color-indigo-600);
+  --accent-emphasis: var(--color-indigo-500);
+
+  --selection: var(--color-indigo-700);
+  --selection-foreground: var(--color-white);
+
+  --grid: rgb(9 9 11 / 0.025);
+  --scanline: rgb(0 0 0 / 0.015);
+  --glow-top: rgb(67 56 202 / 0.05);
+  --glow-bottom: rgb(99 102 241 / 0.04);
+}
+
+.dark {
+  --primary: var(--color-indigo-300);
+  --secondary: var(--color-rose-200);
+  --tertiary: var(--color-indigo-500);
+
+  --background: var(--color-zinc-950);
+  --surface: var(--color-zinc-900);
+  --surface-muted: var(--color-zinc-800);
+
+  --foreground: var(--color-white);
+  --foreground-muted: var(--color-zinc-400);
+  --foreground-subtle: var(--color-zinc-500);
+
+  --border: var(--color-zinc-700);
+  --border-subtle: var(--color-zinc-800);
+
+  --accent: var(--color-indigo-300);
+  --accent-emphasis: var(--color-indigo-500);
+
+  --selection: var(--color-indigo-500);
+  --selection-foreground: var(--color-white);
+
+  --grid: rgb(228 228 231 / 0.04);
+  --scanline: rgb(0 0 0 / 0.22);
+  --glow-top: rgb(67 56 202 / 0.28);
+  --glow-bottom: rgb(99 102 241 / 0.18);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}

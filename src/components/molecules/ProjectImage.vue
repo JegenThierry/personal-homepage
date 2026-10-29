@@ -10,7 +10,7 @@ defineProps<{
 
 <template>
   <CyberFrame>
-    <div class="relative overflow-hidden light:bg-white dark:bg-zinc-900">
+    <div class="relative overflow-hidden bg-surface">
       <img
         v-if="projectImage"
         :src="projectImage"
@@ -20,13 +20,13 @@ defineProps<{
       />
 
       <div v-else class="relative flex aspect-video items-center justify-center">
-        <div aria-hidden="true" class="absolute inset-0 light:bg-zinc-100/60 dark:bg-zinc-800/50" />
+        <div aria-hidden="true" class="absolute inset-0 bg-surface-muted/60" />
         <div class="relative flex flex-col items-center gap-3 text-center">
-          <span class="text-5xl font-bold light:text-zinc-300 dark:text-zinc-700">
+          <span class="text-5xl font-bold text-brand-tertiary">
             {{ projectNumber }}
           </span>
 
-          <span class="text-xs uppercase tracking-widest text-zinc-500">
+          <span class="text-xs uppercase tracking-widest text-foreground-subtle">
             no signal // screenshot pending
           </span>
         </div>
@@ -34,5 +34,3 @@ defineProps<{
     </div>
   </CyberFrame>
 </template>
-
-<style scoped></style>
