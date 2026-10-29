@@ -13,6 +13,11 @@ const { state, next } = useCycleList(['auto', 'light', 'dark'] as const, {
 
 watchEffect(() => {
   mode.value = state.value
+  const isDark =
+    state.value === 'dark' ||
+    (state.value === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  document.documentElement.classList.toggle('dark', isDark)
+  document.documentElement.classList.toggle('light', !isDark)
 })
 
 const icons = { auto: IconMonitor, light: IconSun, dark: IconMoon }
