@@ -2,7 +2,7 @@
 import ProjectImage from '@/components/molecules/ProjectImage.vue'
 import TechTag from '@/components/atoms/TechTag.vue'
 import CyberLink from '@/components/atoms/CyberLink.vue'
-import type { Project } from '@/data/projects';
+import type { Project } from '@/data/projects'
 
 withDefaults(
   defineProps<{
@@ -24,23 +24,21 @@ withDefaults(
 
     <div :class="{ 'lg:order-1': flip }" class="flex flex-col gap-4">
       <div class="flex items-baseline gap-3">
-        <span class="text-xs light:text-indigo-600 dark:text-indigo-300">
+        <span class="text-xs text-brand-primary">
           {{ project.index }}
         </span>
-        <h3
-          class="text-2xl font-bold uppercase tracking-tight light:text-zinc-950 sm:text-3xl dark:text-white"
-        >
+        <h3 class="text-2xl font-bold uppercase tracking-tight text-foreground sm:text-3xl">
           {{ project.name }}
         </h3>
-        <span class="text-xs uppercase tracking-widest text-zinc-500">
+        <span class="text-xs uppercase tracking-widest text-foreground-subtle">
           {{ project.period }}
         </span>
       </div>
 
-      <p class="text-sm uppercase tracking-widest light:text-rose-700 dark:text-rose-200">
+      <p class="text-sm uppercase tracking-widest text-brand-secondary">
         {{ project.tagline }}
       </p>
-      <p class="max-w-xl leading-relaxed light:text-zinc-600 dark:text-zinc-400">
+      <p class="max-w-xl leading-relaxed text-foreground-muted">
         {{ project.description }}
       </p>
 

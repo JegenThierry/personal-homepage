@@ -14,9 +14,9 @@ const navItems = [
       v-for="item in navItems"
       :key="item.number"
       :href="item.href"
-      class="group flex items-baseline gap-1 text-xs uppercase tracking-widest light:text-zinc-600 transition-colors light:hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
+      class="group flex items-baseline gap-1 text-xs uppercase tracking-widest text-foreground-muted transition-colors hover:text-foreground"
     >
-      <span class="text-xs light:text-indigo-600 dark:text-indigo-300">
+      <span class="text-xs text-brand-primary">
         {{ item.number }}
       </span>
       <span class="hidden underline-offset-4 group-hover:underline md:inline">

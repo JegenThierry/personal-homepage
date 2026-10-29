@@ -13,7 +13,7 @@ defineProps<{
   <div class="flex flex-col gap-6">
     <SectionTag :number="number" :label="label" />
     <h2
-      class="max-w-3xl text-3xl font-bold uppercase leading-tight tracking-tight light:text-zinc-950 sm:text-4xl lg:text-5xl dark:text-white"
+      class="max-w-3xl text-3xl font-bold uppercase leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl"
     >
       {{ title }}
     </h2>
