@@ -20,15 +20,13 @@ const readout = [
     <div class="mt-8 grid items-end gap-10 lg:grid-cols-2">
       <div>
         <h1
-          class="text-5xl font-bold uppercase leading-none tracking-tight light:text-zinc-950 sm:text-7xl lg:text-8xl dark:text-white"
+          class="text-5xl font-bold uppercase leading-none tracking-tight text-foreground sm:text-7xl lg:text-8xl"
         >
           Thierry<br />
-          Jegen<span class="light:text-indigo-600 dark:text-indigo-500">_</span>
+          Jegen<span class="text-brand-primary">_</span>
         </h1>
 
-        <p
-          class="mt-6 max-w-xl text-base leading-relaxed light:text-zinc-600 sm:text-lg dark:text-zinc-400"
-        >
+        <p class="mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
           Developer by profession, coffee addict by passion. Building software on a caffeine
           overdose.
         </p>
@@ -44,10 +42,10 @@ const readout = [
     </div>
 
     <div
-      class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-dashed light:border-zinc-300 pt-6 dark:border-zinc-700"
+      class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-dashed border-border pt-6"
     >
       <StatusDot label="ONLINE // Caffeinated" />
-      <p class="text-sm uppercase tracking-widest text-zinc-500">Software Developer</p>
+      <p class="text-sm uppercase tracking-widest text-foreground-subtle">Software Developer</p>
     </div>
   </section>
 </template>

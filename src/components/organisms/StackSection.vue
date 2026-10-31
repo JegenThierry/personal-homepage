@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import SectionHeader from "@/components/molecules/SectionHeader.vue";
-import SkillRow from "@/components/molecules/SkillRow.vue";
-import { skills } from "@/data/skills";
+import SectionHeader from '@/components/molecules/SectionHeader.vue'
+import SkillRow from '@/components/molecules/SkillRow.vue'
+import { skills } from '@/data/skills'
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import { skills } from "@/data/skills";
       note="capabilities"
     />
 
-    <div class="mt-10 border-t border-dashed light:border-zinc-300 dark:border-zinc-700">
+    <div class="mt-10 border-t border-dashed border-border">
       <SkillRow v-for="skill in skills" :key="skill.index" :skill="skill" />
     </div>
   </section>

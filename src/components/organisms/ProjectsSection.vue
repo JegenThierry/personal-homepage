@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import SectionHeader from "@/components/molecules/SectionHeader.vue";
-import ProjectCard from "@/components/molecules/ProjectCard.vue";
-import { projects } from "@/data/projects";
-import { repository } from "@/data/repository";
+import SectionHeader from '@/components/molecules/SectionHeader.vue'
+import ProjectCard from '@/components/molecules/ProjectCard.vue'
+import { projects } from '@/data/projects'
+import { repository } from '@/data/repository'
 </script>
 
 <template>
@@ -18,13 +18,13 @@ import { repository } from "@/data/repository";
       />
     </div>
 
-    <p class="mt-14 text-xs uppercase tracking-widest text-zinc-500">
+    <p class="mt-14 text-xs uppercase tracking-widest text-foreground-subtle">
       // more on
       <a
         :href="repository.baseUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="light:text-zinc-600 underline-offset-4 transition-colors light:hover:text-rose-700 hover:underline dark:text-zinc-400 dark:hover:text-rose-200"
+        class="text-foreground-muted underline-offset-4 transition-colors hover:text-brand-secondary hover:underline"
         >github.com/JegenThierry</a
       >
     </p>

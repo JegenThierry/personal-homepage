@@ -8,12 +8,12 @@ const corners = [
 </script>
 
 <template>
-  <div class="relative border light:border-zinc-300 dark:border-zinc-700">
+  <div class="relative border border-border">
     <span
       v-for="corner in corners"
       :key="corner"
       aria-hidden="true"
-      class="pointer-events-none absolute h-3 w-3 light:border-indigo-500 dark:border-indigo-300"
+      class="pointer-events-none absolute h-3 w-3 border-brand-primary"
       :class="corner"
     />
     <slot />

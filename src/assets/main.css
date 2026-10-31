@@ -2,3 +2,104 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant light (&:where(.light, .light *));
+
+@theme {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-tertiary: var(--brand-tertiary);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+
+  --color-accent: var(--accent);
+  --color-accent-emphasis: var(--accent-emphasis);
+
+  --color-selection: var(--selection);
+  --color-selection-foreground: var(--selection-foreground);
+
+  --color-grid: var(--grid);
+  --color-scanline: var(--scanline);
+  --color-glow-top: var(--glow-top);
+  --color-glow-bottom: var(--glow-bottom);
+}
+
+:root,
+.light {
+  --brand-primary: #8a5530;
+  --brand-secondary: #4f6f5c;
+  --brand-tertiary: #4a5f70;
+
+  --background: #f0e9d8;
+  --surface: #f7f2e6;
+  --surface-muted: #e6dcc5;
+
+  --foreground: #143642;
+  --foreground-muted: #4a5a5e;
+  --foreground-subtle: #526164;
+
+  --border: #cdc2a6;
+  --border-subtle: #ded3b8;
+
+  --accent: #8a5530;
+  --accent-emphasis: #85512f;
+
+  --selection: #8a5530;
+  --selection-foreground: #f7f2e6;
+
+  --grid: rgb(20 54 66 / 0.035);
+  --scanline: rgb(20 54 66 / 0.015);
+  --glow-top: rgb(138 85 48 / 0.07);
+  --glow-bottom: rgb(144 180 148 / 0.08);
+}
+
+.dark {
+  --brand-primary: #e3a987;
+  --brand-secondary: #90b494;
+  --brand-tertiary: #809aa0;
+
+  --background: #0a191f;
+  --surface: #122e38;
+  --surface-muted: #16343f;
+
+  --foreground: #e8e2d4;
+  --foreground-muted: #a8bcc0;
+  --foreground-subtle: #83999f;
+
+  --border: #21404a;
+  --border-subtle: #1b3540;
+
+  --accent: #e3a987;
+  --accent-emphasis: #f0b998;
+
+  --selection: #e3a987;
+  --selection-foreground: #0a191f;
+
+  --grid: rgb(232 226 212 / 0.035);
+  --scanline: rgb(0 0 0 / 0.18);
+  --glow-top: rgb(227 169 135 / 0.10);
+  --glow-bottom: rgb(144 180 148 / 0.07);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  ::selection {
+    background-color: var(--color-selection);
+    color: var(--color-selection-foreground);
+  }
+
+  :focus-visible {
+    outline-color: var(--color-accent-emphasis);
+  }
+}
