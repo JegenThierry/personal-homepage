@@ -31,8 +31,8 @@ const kofi: SocialLink = {
 
 const email: SocialLink = {
   label: "contact me",
-  handle: "jegenthierry@protonmail.com",
-  href: "mailto:jegenthierry@protonmail.com",
+  handle: "thierryjegen@gmail.com",
+  href: "mailto:thierryjegen@gmail.com",
 };
 
 export const socials: SocialLink[] = [github, instagram, kofi, email];
