@@ -50,7 +50,6 @@ const centsible: Project = {
   period: "2026",
   links: [
     { label: "source", href: `${repository.baseUrl}/centsible` },
-    { label: "live", href: "https://centsible.thierry.beer" },
   ],
   screenshot: centsibleScreenshot,
 };
