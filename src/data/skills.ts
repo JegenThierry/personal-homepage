@@ -1,31 +1,27 @@
-import { Technologies } from "./technologies";
+import { Technologies } from './technologies'
 
 export interface Skill {
-  index: string;
-  title: string;
-  description: string;
-  keywords: Technologies[];
+  title: string
+  description: string
+  keywords: Technologies[]
 }
 
 const frontend: Skill = {
-  index: "01",
-  title: "Frontend",
-  description: "Making things look like crema on a coffee.",
+  title: 'Frontend',
+  description: 'Interfaces, from the first component to the final interaction.',
   keywords: [Technologies.VUE, Technologies.REACT, Technologies.TYPESCRIPT, Technologies.TAILWIND],
-};
+}
 
 const backend: Skill = {
-  index: "02",
-  title: "Backend",
-  description: "Services and logic that keep the coffee machine running.",
+  title: 'Backend',
+  description: 'Services, APIs and the data behind them.',
   keywords: [Technologies.KOTLIN, Technologies.C_SHARP, Technologies.GO, Technologies.JAVA],
-};
+}
 
 const hosting: Skill = {
-  index: "03",
-  title: "Self-hosting",
-  description: "Why buy your coffee when you can own your own coffee machine. Privacy first.",
-  keywords: [Technologies.DOCKER, Technologies.LINUX, Technologies.SELF_HOSTING],
-};
+  title: 'Self-hosting',
+  description: 'Deploying, running and owning the machines it all runs on.',
+  keywords: [Technologies.DOCKER, Technologies.LINUX, Technologies.SELF_HOSTED],
+}
 
-export const skills: Skill[] = [frontend, backend, hosting];
+export const skills: Skill[] = [frontend, backend, hosting]

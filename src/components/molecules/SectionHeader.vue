@@ -3,20 +3,20 @@ import SectionTag from '@/components/atoms/SectionTag.vue'
 import SectionDivider from '@/components/atoms/SectionDivider.vue'
 
 defineProps<{
-  number: string
   label: string
   title: string
+  divider?: boolean
 }>()
 </script>
 
 <template>
-  <div class="flex flex-col gap-6">
-    <SectionTag :number="number" :label="label" />
+  <div class="flex flex-col gap-5">
+    <SectionTag :label="label" />
     <h2
-      class="max-w-3xl text-3xl font-bold uppercase leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl"
+      class="max-w-3xl font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem]"
     >
       {{ title }}
     </h2>
-    <SectionDivider />
+    <SectionDivider v-if="divider !== false" />
   </div>
 </template>

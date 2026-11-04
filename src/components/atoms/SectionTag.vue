@@ -1,14 +1,12 @@
 <script setup lang="ts">
 defineProps<{
-  number: string
   label: string
 }>()
 </script>
 
 <template>
-  <p class="flex items-center gap-2 text-sm font-semibold uppercase tracking-widest">
-    <span class="text-brand-primary">{{ number }}</span>
-    <span aria-hidden="true" class="text-border">//</span>
-    <span class="text-foreground-muted">{{ label }}</span>
+  <p class="flex items-center gap-2 font-mono text-xs font-medium uppercase tracking-[0.18em]">
+    <span aria-hidden="true" class="text-brand-primary">//</span>
+    <span class="text-foreground-subtle">{{ label }}</span>
   </p>
 </template>
