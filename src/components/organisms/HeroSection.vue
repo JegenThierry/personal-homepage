@@ -9,7 +9,7 @@ const readout = [
   { key: 'system.status', value: 'online' },
   { key: 'location', value: 'Luxembourg' },
   { key: 'domain', value: site.domain },
-  { key: 'coffee.level', value: 'overflowing ☕' },
+  { key: 'coffee.level', value: 'overflowing' },
 ]
 </script>
 
@@ -19,9 +19,7 @@ const readout = [
 
     <div class="mt-8 grid items-end gap-10 lg:grid-cols-2">
       <div>
-        <h1
-          class="text-5xl font-bold uppercase leading-none tracking-tight text-foreground sm:text-7xl lg:text-8xl"
-        >
+        <h1 class="text-5xl font-bold uppercase leading-none tracking-tight text-foreground sm:text-7xl lg:text-8xl">
           Thierry<br />
           Jegen<span class="text-brand-primary">_</span>
         </h1>
@@ -41,9 +39,7 @@ const readout = [
       <TerminalPanel title="// Loading coffee" :lines="readout" />
     </div>
 
-    <div
-      class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-dashed border-border pt-6"
-    >
+    <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-dashed border-border pt-6">
       <StatusDot label="ONLINE // Caffeinated" />
       <p class="text-sm uppercase tracking-widest text-foreground-subtle">Software Developer</p>
     </div>

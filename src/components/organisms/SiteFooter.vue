@@ -10,7 +10,9 @@ import { site } from '@/data/site'
       <p class="text-xs uppercase tracking-widest text-foreground-subtle">
         © 2026 {{ site.domain }}
       </p>
-      <p class="text-xs uppercase tracking-widest text-foreground-subtle">powered by coffee ☕</p>
+      <p class="text-xs uppercase tracking-widest text-foreground-subtle">
+        powered by coffee
+      </p>
       <a
         href="#top"
         class="text-xs uppercase tracking-widest text-foreground-muted transition-colors hover:text-brand-secondary"
