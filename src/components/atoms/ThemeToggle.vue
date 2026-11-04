@@ -29,9 +29,9 @@ const icon = computed(() => icons[state.value])
     type="button"
     :aria-label="`Theme: ${state}. Activate to switch mode.`"
     :title="`theme :: ${state}`"
-    class="flex h-8 w-8 cursor-pointer items-center justify-center text-foreground-subtle transition-colors hover:text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-emphasis"
+    class="flex h-8 w-8 cursor-pointer items-center justify-center border border-transparent text-foreground-subtle transition-colors hover:border-border hover:text-brand-primary"
     @click="next()"
   >
-    <component :is="icon" class="h-4 w-4" />
+    <component :is="icon" class="h-4 w-4" aria-hidden="true" />
   </button>
 </template>

@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import SectionHeader from '@/components/molecules/SectionHeader.vue'
 import ProjectCard from '@/components/molecules/ProjectCard.vue'
+import TextLink from '@/components/atoms/TextLink.vue'
 import { projects } from '@/data/projects'
 import { repository } from '@/data/repository'
 </script>
 
 <template>
-  <section id="projects" class="scroll-mt-24 py-20">
-    <SectionHeader number="02" label="selected projects" title="Caffeinated Results." />
+  <section id="projects" class="scroll-mt-20 py-14 lg:py-16">
+    <SectionHeader label="selected projects" title="Caffeinated results" />
 
-    <div class="mt-14 flex flex-col gap-16 lg:gap-24">
+    <div class="mt-10 flex flex-col gap-8 lg:gap-12">
       <ProjectCard
         v-for="(project, i) in projects"
         :key="project.id"
@@ -18,15 +19,11 @@ import { repository } from '@/data/repository'
       />
     </div>
 
-    <p class="mt-14 text-xs uppercase tracking-widest text-foreground-subtle">
+    <p class="mt-6 font-mono text-xs uppercase tracking-widest text-foreground-subtle">
       // more on
-      <a
-        :href="repository.baseUrl"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-foreground-muted underline-offset-4 transition-colors hover:text-brand-secondary hover:underline"
-        >github.com/JegenThierry</a
-      >
+      <TextLink :href="repository.baseUrl" external tone="muted">
+        {{ repository.base }}
+      </TextLink>
     </p>
   </section>
 </template>

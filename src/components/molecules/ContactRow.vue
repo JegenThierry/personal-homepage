@@ -1,31 +1,37 @@
 <script setup lang="ts">
 import type { SocialLink } from '@/data/site'
+import { buildMailto } from '@/utils/email'
 
 defineProps<{
   link: SocialLink
 }>()
+
+const isMailLink = (link: SocialLink) => link.href.startsWith('mailto:')
+
+const resolveHref = (link: SocialLink) =>
+  isMailLink(link) && link.parts ? buildMailto(link.parts) : link.href
 </script>
 
 <template>
   <a
-    :href="link.href"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="group flex items-center justify-between gap-4 border-b border-dashed border-border py-5 transition-colors last:border-b-0 hover:bg-surface"
+    :href="resolveHref(link)"
+    :target="isMailLink(link) ? undefined : '_blank'"
+    :rel="isMailLink(link) ? undefined : 'noopener noreferrer'"
+    class="group flex items-center justify-between gap-4 border-b border-dashed border-border px-5 py-4 last:border-b-0 sm:px-6"
   >
-    <span class="flex items-baseline gap-4">
-      <span class="w-24 shrink-0 text-xs uppercase tracking-widest text-foreground-subtle">
+    <span class="flex items-center gap-4">
+      <span
+        class="w-20 shrink-0 font-mono text-xs uppercase tracking-widest text-foreground-subtle"
+      >
         {{ link.label }}
       </span>
-      <span
-        class="text-lg text-foreground-muted transition-colors group-hover:text-brand-secondary sm:text-xl"
-      >
+      <span class="text-base text-foreground transition-colors group-hover:text-brand-secondary">
         {{ link.handle }}
       </span>
     </span>
     <span
       aria-hidden="true"
-      class="text-foreground-subtle transition-all group-hover:translate-x-1 group-hover:text-brand-primary"
+      class="font-mono text-sm leading-none text-foreground-subtle transition-colors group-hover:text-brand-primary"
     >
       -&gt;
     </span>

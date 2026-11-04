@@ -2,7 +2,7 @@
 import SectionHeader from '@/components/molecules/SectionHeader.vue'
 import { facts } from '@/data/facts'
 
-const statement = 'From first coffee to final deploy.'
+const statement = 'From first coffee to final deploy'
 
 const paragraphs = [
   'I am Thierry, a software developer from Luxembourg (living in Germany). Writing code pays my bills during the day and keeps me busy after hours. My passion lies in shaping beautiful experiences for people. I have a strong sense of privacy and ownership, which drives me to build and host my own services.',
@@ -11,10 +11,10 @@ const paragraphs = [
 </script>
 
 <template>
-  <section id="about" class="scroll-mt-24 py-20">
-    <SectionHeader number="04" label="about" :title="statement" note="cv // short form" />
+  <section id="about" class="scroll-mt-20 py-14 lg:py-16">
+    <SectionHeader label="about" :title="statement" />
 
-    <div class="mt-10 grid gap-10 lg:grid-cols-2">
+    <div class="mt-10 grid gap-8 lg:grid-cols-2 lg:gap-12">
       <div class="flex flex-col gap-5">
         <p
           v-for="(paragraph, i) in paragraphs"
@@ -25,14 +25,16 @@ const paragraphs = [
         </p>
       </div>
 
-      <dl class="flex flex-col">
+      <dl class="border border-border bg-surface px-5 sm:px-6">
         <div
           v-for="fact in facts"
           :key="fact.label"
           class="flex items-baseline justify-between gap-4 border-b border-dashed border-border py-3 last:border-b-0"
         >
-          <dt class="text-xs uppercase tracking-widest text-foreground-subtle">{{ fact.label }}</dt>
-          <dd class="text-sm uppercase tracking-widest text-foreground-muted">
+          <dt class="font-mono text-xs uppercase tracking-widest text-foreground-subtle">
+            {{ fact.label }}
+          </dt>
+          <dd class="text-right font-mono text-xs uppercase tracking-widest text-foreground">
             {{ fact.value }}
           </dd>
         </div>

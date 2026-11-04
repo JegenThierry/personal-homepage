@@ -8,12 +8,12 @@ const corners = [
 </script>
 
 <template>
-  <div class="relative border border-border">
+  <div class="relative overflow-hidden border border-border">
     <span
       v-for="corner in corners"
       :key="corner"
       aria-hidden="true"
-      class="pointer-events-none absolute h-3 w-3 border-brand-primary"
+      class="pointer-events-none absolute z-10 h-3 w-3 border-brand-primary"
       :class="corner"
     />
     <slot />
