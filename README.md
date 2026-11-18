@@ -7,8 +7,8 @@ Personal homepage with more coffee jokes that are accepted by the society.
 To run the project in a local development environment, follow these steps:
 
 1. Clone the repository.
-2. Install dependencies using `pnpm install`.
-3. Start the development server with `pnpm dev`.
+2. Install dependencies using `npm install`.
+3. Start the development server with `npm run dev`.
 
 ## Docker
 
