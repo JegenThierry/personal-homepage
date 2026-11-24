@@ -24,14 +24,14 @@ const target = computed(() => {
     :href="target"
     :target="isExternal ? '_blank' : undefined"
     :rel="isExternal ? 'noopener noreferrer' : undefined"
-    class="group inline-flex items-center gap-1 text-foreground-muted transition-colors duration-200 hover:text-brand-secondary"
+    class="group inline-flex items-center gap-1 text-foreground-muted transition-colors duration-200 hover:text-brand-primary"
   >
-    <span aria-hidden="true" class="font-mono text-brand-secondary">[</span>
+    <span aria-hidden="true" class="font-mono text-brand-primary">[</span>
     <span
-      class="underline decoration-border decoration-dashed underline-offset-4 group-hover:decoration-brand-secondary"
+      class="underline decoration-border decoration-dashed underline-offset-4 group-hover:decoration-brand-primary"
     >
       <slot />
     </span>
-    <span aria-hidden="true" class="font-mono text-brand-secondary">]</span>
+    <span aria-hidden="true" class="font-mono text-brand-primary">]</span>
   </a>
 </template>

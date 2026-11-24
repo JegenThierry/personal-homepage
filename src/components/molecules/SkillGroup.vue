@@ -10,7 +10,7 @@ defineProps<{
 <template>
   <div class="flex h-full flex-col gap-4">
     <div class="flex flex-col gap-1">
-      <h3 class="font-display text-lg font-bold tracking-tight text-foreground">
+      <h3 class="font-display text-xl font-bold tracking-tight text-foreground">
         {{ skill.title }}
       </h3>
       <p class="text-sm leading-relaxed text-foreground-muted">

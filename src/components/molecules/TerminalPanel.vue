@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import CyberFrame from '@/components/atoms/CyberFrame.vue'
-import GridTexture from '@/components/atoms/GridTexture.vue'
 
 export interface ReadoutLine {
   key: string
@@ -14,10 +13,9 @@ defineProps<{
 </script>
 
 <template>
-  <CyberFrame class="bg-surface-raised">
-    <GridTexture />
+  <CyberFrame>
     <div class="relative flex flex-col gap-3 p-5">
-      <p class="font-mono text-xs uppercase tracking-[0.14em] text-foreground-subtle">
+      <p class="text-mono-meta text-foreground-subtle">
         {{ title }}
       </p>
       <dl class="flex flex-col gap-2 font-mono text-sm">
@@ -25,7 +23,7 @@ defineProps<{
           <dt class="shrink-0 text-brand-primary">
             <span aria-hidden="true">&gt; </span>{{ line.key }}:
           </dt>
-          <dd class="uppercase tracking-widest text-foreground-muted">
+          <dd class="uppercase tracking-wider text-foreground-muted">
             {{ line.value }}
           </dd>
         </div>

@@ -14,7 +14,7 @@ const navItems = [
       v-for="item in navItems"
       :key="item.label"
       :href="item.href"
-      class="font-mono text-xs tracking-widest text-foreground-muted underline decoration-transparent decoration-dashed underline-offset-4 transition-colors hover:text-foreground hover:decoration-border"
+      class="text-mono-meta text-foreground-muted underline decoration-transparent decoration-dashed underline-offset-4 transition-colors hover:text-brand-primary hover:decoration-border"
     >
       {{ item.label }}
     </a>

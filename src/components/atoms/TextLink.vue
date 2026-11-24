@@ -14,7 +14,7 @@ withDefaults(
     :href="href"
     :target="external ? '_blank' : undefined"
     :rel="external ? 'noopener noreferrer' : undefined"
-    class="underline decoration-border decoration-dashed underline-offset-4 transition-colors hover:text-brand-secondary hover:decoration-brand-secondary"
+    class="underline decoration-border decoration-dashed underline-offset-4 transition-colors hover:text-brand-primary hover:decoration-brand-primary"
     :class="tone === 'muted' ? 'text-foreground-muted' : 'text-inherit'"
   >
     <slot />

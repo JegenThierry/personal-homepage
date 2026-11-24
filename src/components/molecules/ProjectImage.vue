@@ -22,9 +22,7 @@ defineProps<{
       />
 
       <div v-else class="flex h-full w-full items-center justify-center">
-        <span class="font-mono text-xs uppercase tracking-widest text-foreground-subtle">
-          no signal // screenshot pending
-        </span>
+        <span class="text-mono-tag text-foreground-subtle"> no signal // screenshot pending </span>
       </div>
     </div>
   </CyberFrame>
