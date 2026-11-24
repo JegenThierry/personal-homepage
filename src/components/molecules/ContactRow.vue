@@ -17,15 +17,13 @@ const resolveHref = (link: SocialLink) =>
     :href="resolveHref(link)"
     :target="isMailLink(link) ? undefined : '_blank'"
     :rel="isMailLink(link) ? undefined : 'noopener noreferrer'"
-    class="group flex items-center justify-between gap-4 border-b border-dashed border-border px-5 py-4 last:border-b-0 sm:px-6"
+    class="group flex items-center justify-between gap-4 border-b border-dashed border-border py-4 last:border-b-0"
   >
     <span class="flex items-center gap-4">
-      <span
-        class="w-20 shrink-0 font-mono text-xs uppercase tracking-widest text-foreground-subtle"
-      >
+      <span class="w-20 shrink-0 text-mono-meta text-foreground-subtle">
         {{ link.label }}
       </span>
-      <span class="text-base text-foreground transition-colors group-hover:text-brand-secondary">
+      <span class="text-base text-foreground transition-colors group-hover:text-brand-primary">
         {{ link.handle }}
       </span>
     </span>

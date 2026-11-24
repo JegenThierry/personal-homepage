@@ -13,7 +13,7 @@ import ThemeToggle from '@/components/atoms/ThemeToggle.vue'
       <a
         href="#top"
         aria-label="thierry.beer — back to top"
-        class="font-display text-sm font-bold tracking-tight text-foreground transition-colors hover:text-brand-secondary"
+        class="font-display text-sm font-bold tracking-tight text-foreground transition-colors hover:text-brand-primary"
       >
         thierry<span class="text-brand-primary">.</span>beer
       </a>

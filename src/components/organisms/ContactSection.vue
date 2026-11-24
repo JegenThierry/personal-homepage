@@ -8,7 +8,7 @@ import { socials } from '@/data/site'
   <section id="contact" class="scroll-mt-20 py-14 lg:py-16">
     <SectionHeader label="contact" title="Brew a conversation" :divider="false" />
 
-    <div class="mt-10 border border-border bg-surface">
+    <div class="mt-10">
       <ContactRow v-for="link in socials" :key="link.label" :link="link" />
     </div>
   </section>

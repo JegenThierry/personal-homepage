@@ -27,7 +27,7 @@
   --color-border: var(--border);
   --color-border-subtle: var(--border-subtle);
 
-  --color-accent: var(--accent);
+  --color-accent: var(--brand-primary);
   --color-accent-emphasis: var(--accent-emphasis);
 
   --color-selection: var(--selection);
@@ -45,31 +45,27 @@
   --brand-secondary: #3f5c4a;
   --brand-tertiary: #3b4e5c;
 
-  --background: #f0e9d8;
-  --surface: #f7f2e6;
-  --surface-raised: #fffcf4;
-  --surface-muted: #e6dcc5;
+  --background: #ece2cd;
+  --surface: #f9f5ec;
+  --surface-raised: #fffdf6;
+  --surface-muted: #e7ddc7;
 
   --foreground: #143642;
   --foreground-muted: #3f5054;
   --foreground-subtle: #49585b;
 
-  --border: #c2b594;
-  --border-subtle: #d8ccb1;
+  --border: #8a7550;
+  --border-subtle: #c2b594;
 
-  --accent: #7d4a26;
   --accent-emphasis: #6d3f1f;
 
   --selection: #7d4a26;
-  --selection-foreground: #f7f2e6;
+  --selection-foreground: #f9f5ec;
 
   --grid: rgb(20 54 66 / 0.05);
   --scanline: rgb(20 54 66 / 0.02);
   --glow-top: rgb(125 74 38 / 0.1);
-  --glow-bottom: rgb(144 180 148 / 0.1);
-
-  --shadow-panel: 0 1px 0 0 rgb(255 255 255 / 0.7) inset, 0 18px 40px -28px rgb(20 54 66 / 0.35);
-  --shadow-raised: 0 1px 0 0 rgb(255 255 255 / 0.8) inset, 0 26px 50px -26px rgb(20 54 66 / 0.45);
+  --glow-bottom: rgb(63 92 74 / 0.1);
 }
 
 .dark {
@@ -78,18 +74,17 @@
   --brand-tertiary: #94adb3;
 
   --background: #0a191f;
-  --surface: #122e38;
-  --surface-raised: #17353f;
-  --surface-muted: #16343f;
+  --surface: #173c4a;
+  --surface-raised: #1b414f;
+  --surface-muted: #102b37;
 
   --foreground: #e8e2d4;
   --foreground-muted: #b4c6ca;
-  --foreground-subtle: #93a8ad;
+  --foreground-subtle: #96abb0;
 
-  --border: #2a4b56;
-  --border-subtle: #1f3c46;
+  --border: #5f909c;
+  --border-subtle: #2a4b56;
 
-  --accent: #e3a987;
   --accent-emphasis: #f0b998;
 
   --selection: #e3a987;
@@ -98,10 +93,7 @@
   --grid: rgb(232 226 212 / 0.05);
   --scanline: rgb(0 0 0 / 0.18);
   --glow-top: rgb(227 169 135 / 0.12);
-  --glow-bottom: rgb(144 180 148 / 0.08);
-
-  --shadow-panel: 0 1px 0 0 rgb(255 255 255 / 0.04) inset, 0 22px 44px -30px rgb(0 0 0 / 0.9);
-  --shadow-raised: 0 1px 0 0 rgb(255 255 255 / 0.06) inset, 0 30px 60px -28px rgb(0 0 0 / 0.95);
+  --glow-bottom: rgb(166 196 169 / 0.08);
 }
 
 @layer base {
@@ -144,18 +136,6 @@
   }
 }
 
-@utility panel {
-  border: 1px solid var(--color-border);
-  background-color: var(--color-surface);
-  box-shadow: var(--shadow-panel);
-}
-
-@utility panel-raised {
-  border: 1px solid var(--color-border);
-  background-color: var(--color-surface-raised);
-  box-shadow: var(--shadow-raised);
-}
-
 @utility text-display {
   font-family: var(--font-display);
   font-weight: 700;
@@ -163,9 +143,18 @@
   line-height: 1.05;
 }
 
+/* Canonical uppercase mono label: nav links, tags, meta, section labels. */
 @utility text-mono-meta {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Smaller variant for dense inline labels such as technology tags. */
+@utility text-mono-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }

@@ -14,9 +14,7 @@ withDefaults(
 </script>
 
 <template>
-  <article
-    class="group grid items-center gap-6 border border-border bg-surface p-5 transition-shadow duration-300 motion-safe:hover:shadow-[var(--shadow-raised)] sm:p-6 lg:grid-cols-2 lg:gap-10 lg:p-8"
-  >
+  <article class="group grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
     <ProjectImage
       :project-image="project?.screenshot"
       :project-name="project.name"
@@ -25,15 +23,15 @@ withDefaults(
 
     <div :class="{ 'lg:order-1': flip }" class="flex flex-col gap-4">
       <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <h3 class="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+        <h3 class="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl">
           {{ project.name }}
         </h3>
-        <span class="font-mono text-xs uppercase tracking-widest text-foreground-subtle">
+        <span class="text-mono-meta text-foreground-subtle">
           {{ project.period }}
         </span>
       </div>
 
-      <p class="font-mono text-xs uppercase tracking-[0.14em] text-brand-secondary">
+      <p class="text-mono-tag text-brand-secondary">
         {{ project.tagline }}
       </p>
       <p class="max-w-xl leading-relaxed text-foreground-muted">

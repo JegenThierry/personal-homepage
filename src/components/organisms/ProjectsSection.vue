@@ -10,7 +10,7 @@ import { repository } from '@/data/repository'
   <section id="projects" class="scroll-mt-20 py-14 lg:py-16">
     <SectionHeader label="selected projects" title="Caffeinated results" />
 
-    <div class="mt-10 flex flex-col gap-8 lg:gap-12">
+    <div class="mt-10 flex flex-col gap-12 lg:gap-16">
       <ProjectCard
         v-for="(project, i) in projects"
         :key="project.id"
@@ -19,7 +19,7 @@ import { repository } from '@/data/repository'
       />
     </div>
 
-    <p class="mt-6 font-mono text-xs uppercase tracking-widest text-foreground-subtle">
+    <p class="mt-6 text-mono-meta text-foreground-subtle">
       // more on
       <TextLink :href="repository.baseUrl" external tone="muted">
         {{ repository.base }}

@@ -25,16 +25,16 @@ const paragraphs = [
         </p>
       </div>
 
-      <dl class="border border-border bg-surface px-5 sm:px-6">
+      <dl>
         <div
           v-for="fact in facts"
           :key="fact.label"
           class="flex items-baseline justify-between gap-4 border-b border-dashed border-border py-3 last:border-b-0"
         >
-          <dt class="font-mono text-xs uppercase tracking-widest text-foreground-subtle">
+          <dt class="text-mono-meta text-foreground-subtle">
             {{ fact.label }}
           </dt>
-          <dd class="text-right font-mono text-xs uppercase tracking-widest text-foreground">
+          <dd class="text-right text-mono-meta text-foreground">
             {{ fact.value }}
           </dd>
         </div>
